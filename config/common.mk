@@ -52,6 +52,9 @@ PRODUCT_PACKAGES += \
 # PixelLauncher overlays
 $(call inherit-product-if-exists, vendor/google/overlays/ThemeIcons/config.mk)
 
+# Signing keys
+include vendor/custom/config/signing.mk
+
 # Updater
 include vendor/custom/config/ota.mk
 
