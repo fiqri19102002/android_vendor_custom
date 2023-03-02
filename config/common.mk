@@ -82,6 +82,9 @@ endif
 PRODUCT_PACKAGES += \
     TouchGestures
 
+# Signing keys
+include vendor/custom/config/signing.mk
+
 # Updater
 include vendor/custom/config/ota.mk
 
