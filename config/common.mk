@@ -55,6 +55,11 @@ PRODUCT_PACKAGES += \
     FrameworkOverlayCustom \
     SettingsOverlayCustom
 
+# LMOFreeForm
+PRODUCT_PACKAGES += \
+    LMOFreeform \
+    LMOFreeformSidebar
+
 # PixelLauncher overlays
 $(call inherit-product-if-exists, vendor/google/overlays/ThemeIcons/config.mk)
 
