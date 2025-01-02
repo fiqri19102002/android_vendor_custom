@@ -72,6 +72,9 @@ PRODUCT_PACKAGES += \
     GoogleDialerOverlayCustom \
     SettingsOverlayCustom
 
+# PixelLauncher overlays
+$(call inherit-product-if-exists, vendor/google/overlays/ThemeIcons/config.mk)
+
 # Quick Tap
 ifneq ($(TARGET_SUPPORTS_QUICK_TAP),false)
 PRODUCT_PACKAGES += \
