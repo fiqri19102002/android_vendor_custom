@@ -49,6 +49,9 @@ PRODUCT_PACKAGES += \
     FrameworkOverlayCustom \
     SettingsOverlayCustom
 
+# PixelLauncher overlays
+$(call inherit-product-if-exists, vendor/google/overlays/ThemeIcons/config.mk)
+
 # Updater
 include vendor/custom/config/ota.mk
 
