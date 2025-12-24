@@ -10,6 +10,12 @@ endif
 PRODUCT_PACKAGES += \
     bootanimation_pixelos
 
+# Charger
+WITH_LINEAGE_CHARGER := false
+PRODUCT_PACKAGES += \
+    custom_charger_animation \
+    custom_charger_animation_vendor
+
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED ?= $(TARGET_SUPPORTS_64_BIT_APPS)
 
@@ -54,6 +60,10 @@ $(call inherit-product-if-exists, vendor/google/overlays/ThemeIcons/config.mk)
 
 # Signing keys
 include vendor/custom/config/signing.mk
+
+# TouchGesture
+PRODUCT_PACKAGES += \
+    TouchGestures
 
 # Updater
 include vendor/custom/config/ota.mk
